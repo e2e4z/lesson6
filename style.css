@@ -1,0 +1,804 @@
+@font-face {
+    font-family: SocialIco;
+    src: url(fonts/Socialico.ttf);
+}
+
+@font-face {
+    font-family: Nexabold;
+    src: url(fonts/Nexabold.ttf);
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    max-width: 1597px;
+    margin: 0 auto;
+    background-size: cover;
+    display: block;
+}
+
+h3,
+p {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+p {
+    font-size: 17px;
+    margin-top: 37px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 400;
+    color: #3f3f3f;
+    margin-top: 0px;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #6f6f6e;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    margin-top: 0;
+    font-size: 47.7px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: #474747;
+}
+
+.animate__heartBeat {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.readMore:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.readMore {
+    transition: all 0.3s ease;
+}
+
+.galleryCard {
+    position: relative;
+}
+
+.front,
+.back {
+    position: absolute;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+    transition: 2s;
+    backface-visibility: hidden;
+}
+
+.galleryCard:hover .front {
+    transform: rotateY(180deg);
+}
+
+.galleryCard:hover .back {
+    transform: rotateY(360deg);
+    
+}
+
+button.readMore.back {
+    margin: 20%;
+}
+
+/*HEADER*/
+
+.header {
+    padding: 33px 304px 36px 185px;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 31% 29% 23% 17%;
+    grid-template-rows: 1fr;
+}
+
+.workTime,
+.mail,
+.callUs {
+    color: #6a6a6a;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.nav {
+    margin-top: 35px;
+    height: 21px;
+}
+
+.menu {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.menu-list {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    font-family: 'Nexabold', 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #6c6c6c;
+}
+
+.menu-link-active {
+    color: #262626;
+}
+
+.menu-link:hover {
+    color: #262626;
+}
+
+a {
+    text-decoration: none;
+    color: #6A6A6A;
+    font-size: 20px;
+}
+
+.socialMedia {
+    width: 20%;
+    float: right;
+    font-size: 23.4px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #191919;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+i.fa {
+    justify-content: space-between;
+    float: left;
+    width: 52px;
+    height: 52px;
+    border-radius: 35px;
+    color: white;
+    background-color: #1b9bdc;
+    margin-right: 20px;
+}
+
+.fa:before {
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    padding-top: 12px;
+}
+
+.line {
+    height: 2px;
+    background-color: #c2c2c2;
+    margin-top: 20px;
+}
+
+/*MAIN*/
+
+.bestMedicare {
+    background-image: url(img/docheader.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.medicare {
+    padding-left: 250px;
+    padding-top: 180px;
+    padding-bottom: 182px;
+    width: 600px;
+}
+
+.readMore {
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 35px;
+    background-color: #1A9BDC;
+    width: 167px;
+    height: 48px;
+    color: #fff;
+    font-size: 18.5px;
+    font-weight: 700;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    outline: none;
+    line-height: 1.2;
+    letter-spacing: 0.025em;
+    box-shadow: -4px 11px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+.readMore:hover {
+    background-color: #43b1d2;
+}
+
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.bestTreatment {
+    letter-spacing: -0.025em;
+    color: #fff;
+}
+
+.block {
+    text-align: center;
+    padding-top: 75px;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 57px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+figure {
+    background-color: white;
+    border-radius: 100px;
+    width: 76px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.stethoscope {
+    background-color: #43B1D2;
+}
+
+.telephone {
+    background-color: #3FB6C6;
+}
+
+.logodoc {
+    background-color: #3CBBBB;
+}
+
+.ambulance {
+    background-color: #37C3A8;
+}
+
+i.fab {
+    font-size: 23.4px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #191919;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.whyUs {
+    background-image: url(img/docWhy.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 111px 192px 0 214px;
+    align-content: center;
+}
+
+.whyChooseUs {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #494949;
+    box-sizing: border-box;
+}
+
+.professional {
+    margin-top: 95px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+}
+
+.professional-block:nth-child(3) {
+    margin-bottom: 100px;
+}
+
+.professional-block {
+    box-sizing: border-box;
+}
+
+.professional-h {
+    float: left;
+    margin-left: 20px;
+}
+
+.whyChooseUs-par {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #6a6a6a;
+    max-width: 878px;
+    display: block;
+    margin-left: 10%;
+    box-sizing: border-box;
+}
+
+.professional-par {
+    margin-left: 0;
+    text-align: left;
+    clear: both;
+}
+
+.logoProfessional {
+    background-color: #1a9bdc;
+    border-radius: 100px;
+    width: 76px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    float: left;
+}
+
+.achievements {
+    background-image: url(img/docS4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 155px 247px 155px 245px;
+    align-content: center;
+    background-color: #0087be;
+    background-blend-mode: multiply;
+}
+
+.achievements-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    color: #fff;
+}
+
+.lineAchieve {
+    width: 84px;
+    height: 6px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 34px;
+}
+
+.number {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.achieveText {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: #fff;
+}
+
+.achieve {
+    max-width: 165px;
+    text-align: center;
+}
+
+.gallery {
+    background-image: url(img/rectangleback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 93px 240px 95px 260px;
+    align-content: center;
+}
+
+.gallery-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.galleryHeading {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+}
+
+.gallery-par {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 54px;
+}
+
+.gallery-photo {
+    border: none;
+    margin-right: 35px;
+    margin-bottom: 35px;
+}
+
+.ourTeam {
+    padding: 150px 188px 133px 213px;
+}
+
+.blockDoctors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.blockTeam {
+    text-align: center;
+    margin: 0;
+}
+
+.text {
+    padding-top: 17px;
+}
+
+.logo i {
+    color: #0087BE;
+}
+
+.consultation {
+    background-color: #E2E2E2;
+}
+
+.newConsultationText {
+    float: left;
+    justify-content: space-between;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #494949;
+    margin-top: 8px;
+}
+
+.consultationBlock {
+    padding: 81px 221px 54px 267px;
+    display: flow-root;
+}
+
+.consultationButton {
+    float: right;
+}
+
+.worksCreative {
+    padding: 100px 196px 100px 217px;
+    grid-gap: 20px;
+}
+
+.howWeWorks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.item {
+    width: 100%;
+    text-align: left;
+}
+
+div.readMore.item {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    color: #494949;
+    text-transform: capitalize;
+    background-color: #e2e2e2;
+    margin-bottom: 11px;
+    box-shadow: 0px 0px 0px 0;
+    padding-top: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+div.readMore.item.first {
+    background-color: #0087be;
+}
+
+i.fas.fa-play {
+    display: flex;
+}
+
+i.fas.fa-play::before {
+    font-size: 10px;
+    color: #0087be;
+}
+
+.roundBack {
+    width: 40px;
+    height: 40px;
+    background-color: #f9fcfd;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.buttonText {
+    font-size: 20px;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+.buttonText.first {
+    color: #fff;
+}
+
+.howWeWorksButton {
+    margin-left: 257px;
+    margin-top: 52px;
+}
+
+.howWeWorksHeading {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.howWeWorks-par {
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #6a6a6a;
+    text-align: justify;
+}
+
+.item1 {
+    padding-right: 57px;
+}
+
+.item6 {
+    margin-right: 60px;
+}
+
+.item7 {
+    margin-right: 60px;
+}
+
+.itemText {
+    text-align: justify;
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #6a6a6a;
+    padding-right: 55px;
+}
+
+.itemName {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: #6f6f6e;
+}
+
+.date {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #0087be;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*MEDIA*/
+
+@media (max-width: 1572px) {
+
+    .header,
+    .main {
+        max-width: 1200px;
+    }
+
+    .contacts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }
+
+    .menu {
+        width: 70%;
+    }
+
+    .gallery {
+        padding: 93px 30px 95px 30px;
+    }
+
+    .item1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .howWeWorks {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .consultationButton {
+        float: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        max-width: 992px;
+        padding-bottom: 100px;
+    }
+
+    .socialMedia {
+        clear: both;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .block {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .medicare {
+        padding-left: 90px;
+        padding-top: 180px;
+        padding-bottom: 182px;
+    }
+
+    .achievements {
+        padding: 40px 40px 40px 60px;
+    }
+
+    .gallery-block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .gallery {
+        padding: 93px 200px 95px 200px;
+    }
+
+    .worksCreative {
+        padding: 10px 19px 10px 50px;
+    }
+
+    .blockDoctors {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        max-width: 750px;
+        padding-bottom: 200px;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .whyUs {
+        padding: 0 0 0 30px;
+    }
+
+    .achievements {
+        padding: 40px 40px 40px 60px;
+    }
+
+    .achive {
+        max-width: 60px;
+    }
+
+    .gallery {
+        padding: 93px 20px 95px 40px;
+    }
+
+    .howWeWorks {
+        padding: 0px 0px 0px 0px;
+        margin: 0;
+    }
+
+    .ourTeam {
+        padding: 15px 18px 13px 23px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        max-width: 650px;
+    }
+
+    .medicare {
+        padding-left: 0;
+        padding-top: 180px;
+        padding-bottom: 182px;
+    }
+
+    .achievements {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .medicare {
+        margin-left: 50px;
+    }
+
+    .gallery-block {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        margin-left: 180px;
+    }
+
+    .howWeWorks {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .consultationBlock {
+        padding: 5px 5px 5px 5px;
+    }
+}
